@@ -14,10 +14,11 @@ Bundle 'tomtom/tlib_vim'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/vim-snippets'
 Bundle 'tristen/vim-sparkup'
+Bundle 'jelera/vim-javascript-syntax'
 Bundle 'tpope/vim-surround'
 
 " Enable syntax highlighting
-syntax enable
+syntax on
 " Set up colors
 set t_Co=256
 colorscheme molokai
@@ -79,6 +80,8 @@ nnoremap <leader><space> :nohlsearch<CR>
 set laststatus=2
 " Disable backup files.
 set nobackup
+
+nmap ;w :w<CR>
 
 "inoremap ( ()<Esc>i
 "inoremap { {}<Esc>i
